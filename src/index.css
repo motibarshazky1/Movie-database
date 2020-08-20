@@ -1,0 +1,133 @@
+header h1 {
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+}
+body {
+    background-color: rgb(22, 33, 43);
+    font-family: 'montserrat', sans-serif;
+    justify-content: center;
+}
+.header {
+    padding: 50px 15px 0px;
+}
+input[type='text'] {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: black;
+    width: 600px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: 'montserrat', sans-serif;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+input[type='text']:focus {
+    outline: none;
+    border: 1px solid #4538ff;
+    color: #6e83f8;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+    width: 100%;
+}
+.results .result {
+    width: 20%;
+    min-width: 250px;
+    padding: 33px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.results .result h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    background: #445565;
+    flex: 1 1 100%;
+    transition: 0.4s ease-out;
+}
+.results .result:hover h3 {
+    background: white;
+    color: #223343;
+}
+.result {
+    margin-top: 50px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.results .result img {
+    width: 100%;
+    display: block;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #445565;
+}
+.popup .content {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 25px;
+    color: white;
+}
+.popup .content h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.popup .content h2 span {
+    font-size: 20px;
+    font-weight: 300;
+}
+.popup .content .rating {
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.popup .content .plot {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px 30px;
+}
+.popup .content .plot img {
+    flex: 1 1 50%;
+    max-width: 260px;
+    max-height: 335px;
+    padding: 0px 15px;
+}
+.popup .content .plot p {
+    flex: 1 1 50%;
+    padding: 15px;
+}
+.popup .content .close {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    background: #4484c4;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+.popup .content .close:hover {
+    background: #223343;
+}
